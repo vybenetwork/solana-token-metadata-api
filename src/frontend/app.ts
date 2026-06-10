@@ -651,7 +651,7 @@ fetchAllBtn.addEventListener('click', async () => {
 
     try {
       if (usePaged) {
-        if (tradesSummaryHeading) tradesSummaryHeading.textContent = `Last ${TRADES_TOTAL} trades summary`;
+        if (tradesSummaryHeading) tradesSummaryHeading.textContent = `Last ${TRADES_TOTAL} Trades Summary`;
         if (tradesSummaryLoadingText) tradesSummaryLoadingText.textContent = 'Loading… (0%)';
         const batches: (TradeRow[] | null)[] = Array(TRADES_TOTAL_PAGES).fill(null);
         let completedCount = 0;
@@ -679,7 +679,7 @@ fetchAllBtn.addEventListener('click', async () => {
           Array.from({ length: TRADES_TOTAL_PAGES - 1 }, (_, i) => fetchPage(i + 1))
         );
       } else {
-        if (tradesSummaryHeading) tradesSummaryHeading.textContent = 'Last trades summary';
+        if (tradesSummaryHeading) tradesSummaryHeading.textContent = 'Last 1000 Trades Summary';
         if (tradesSummaryLoadingText) tradesSummaryLoadingText.textContent = 'Loading…';
         const res = await fetchWithRetry(
           buildTradesUrl({ limit: 1000 })
