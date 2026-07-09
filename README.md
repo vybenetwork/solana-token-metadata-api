@@ -2,7 +2,7 @@
 
 This repository fetches a token's top traders (highest PNLs), top holders and whales, and comprehensive Solana token stats and metadata for any Token-2022 or SPL token. Use this project as a reference implementation or starter kit for building Solana analytics dashboards, token explorers, and on-chain data products. It includes a production-ready Node.js backend and a modern frontend that showcase how to integrate Vybe’s endpoints for price, volume, market cap, holders, trades, programs, and token symbols.
 
-Try the live demo: https://solana-token-stats-metadata-api.vybenetwork.com
+Try the live demo: https://solana-token-metadata-api.vybenetwork.com
 
 Use this project as a reference implementation or starter kit for building Solana analytics dashboards, token explorers, and on-chain data products powered by Vybe’s high-performance Solana token data API.
 
@@ -16,7 +16,7 @@ Use this project as a reference implementation or starter kit for building Solan
 
 ---
 
-**[Try the LIVE demo →](https://solana-token-stats-metadata-api.vybenetwork.com)**  
+**[Try the LIVE demo →](https://solana-token-metadata-api.vybenetwork.com)**  
 
 **[Get your free Vybe API key →](https://vybe.fyi/api-pricing)**  
 
