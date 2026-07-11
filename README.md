@@ -2,11 +2,11 @@
 
 <p align="center">
 
-[![Demo](https://img.shields.io/badge/Demo-Live%20app-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://solana-token-metadata-api.vybenetwork.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/vybenetwork/solana-token-stats-metadata-api)
-[![Telegram](https://img.shields.io/badge/Telegram-VybeNetwork-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/VybeNetwork_Official)
+[![Demo](https://img.shields.io/badge/Demo-Solana%20Token%20Metadata%20API%20live%20app-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://solana-token-metadata-api.vybenetwork.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vybenetwork/solana-token-stats-metadata-api)
 [![X](https://img.shields.io/badge/X-Vybe__Network-000000?style=for-the-badge&logo=x)](https://x.com/Vybe_Network)
 
+[![Telegram](https://img.shields.io/badge/Telegram-VybeNetwork-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/VybeNetwork_Official)
 </p>
 
 This repository fetches a token's top traders (highest PNLs), top holders and whales, and comprehensive Solana token stats and metadata for any Token-2022 or SPL token. Use this project as a reference implementation or starter kit for building Solana analytics dashboards, token explorers, and on-chain data products. It includes a production-ready Node.js backend and a modern frontend that showcase how to integrate Vybe’s endpoints for price, volume, market cap, holders, trades, programs, and token symbols.
