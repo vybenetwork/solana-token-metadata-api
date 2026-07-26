@@ -1018,7 +1018,7 @@ function tokenStatsMainRowHtml(
 function renderToken(t: TokenData): void {
   const tokenLogoSrc = resolveTokenLogoSrc(t.logoUrl, t.mintAddress);
   tokenLogo.src = tokenLogoSrc;
-  tokenLogo.alt = t.symbol || '';
+  tokenLogo.alt = `${t.symbol || 'Token'} logo`;
   tokenLogo.style.display = tokenLogoSrc ? 'block' : 'none';
   tokenSymbol.textContent = t.symbol || '—';
   const nameTrim = (t.name || '').trim();
@@ -1327,7 +1327,7 @@ function renderEmptyState(): void {
   tokenName.removeAttribute('title');
   tokenLogo.style.display = 'none';
   tokenLogo.src = '';
-  tokenLogo.alt = '';
+  tokenLogo.alt = 'Selected token logo in the Solana Token Metadata API demo';
   tokenStats.innerHTML = buildTokenStatsPlaceholderHtml();
   setTokenLastUpdated('—');
 
