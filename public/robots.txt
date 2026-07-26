@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solana-token-metadata-api.vybenetwork.com/sitemap.xml
