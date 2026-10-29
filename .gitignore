@@ -11,3 +11,4 @@ public/app.js
 scripts/
 # Persistent caches (read/write at request time)
 data/
+.env.backup*
