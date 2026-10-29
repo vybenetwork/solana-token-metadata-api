@@ -1,0 +1,16 @@
+# Solana Token Metadata API
+
+> Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics.
+
+Live demo of the Vybe Solana API. The linked docs pages are the Markdown versions.
+
+## Demo
+- [Solana Token Metadata API](https://solana-token-metadata-api.vybenetwork.com/): Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics.
+
+## Docs
+- [Token Details Guide](https://docs.vybenetwork.com/docs/token-details-spl-token-2022.md)
+- [Token Details API](https://docs.vybenetwork.com/reference/get_token_details_v4.md)
+- [Token Trade History API](https://docs.vybenetwork.com/reference/get_trade_data_program_v4.md)
+- [Top Token Holders API](https://docs.vybenetwork.com/reference/get_top_holders_v4.md)
+- [Labeled Programs API](https://docs.vybenetwork.com/reference/get_known_program_accounts_v4.md)
+- [Top Token Traders API](https://docs.vybenetwork.com/reference/get_top_traders_v4.md)
