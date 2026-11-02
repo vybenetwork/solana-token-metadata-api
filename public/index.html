@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       @media (max-width: 1179px) {
-        html {
-          zoom: calc(100vw / 1400);
-          background: #070708;
-          text-size-adjust: 100%;
-          -webkit-text-size-adjust: 100%;
-        }
+        html { background: #070708; }
       }
     </style>
+    <script>
+      (function () {
+        var LAYOUT = 1500;
+        function fit() {
+          var w = window.innerWidth;
+          if (document.documentElement.clientWidth) w = Math.min(w, document.documentElement.clientWidth);
+          if (window.visualViewport) w = Math.min(w, window.visualViewport.width);
+          var html = document.documentElement;
+          if (w >= 1180) html.style.zoom = "";
+          else html.style.zoom = String(w / LAYOUT);
+        }
+        fit();
+        window.addEventListener("resize", fit);
+        if (window.visualViewport) window.visualViewport.addEventListener("resize", fit);
+      })();
+    </script>
   <title>Solana Token Metadata API</title>
   <meta name="description" content="Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics." />
   <meta name="keywords" content="Solana token stats, token metadata API, Vybe API, SPL token, Token-2022, top holders, top traders, trade history, market cap, token analytics" />
