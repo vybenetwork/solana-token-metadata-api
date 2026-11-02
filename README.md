@@ -62,7 +62,7 @@ Then open **http://localhost:3000**, explore the preloaded BONK analytics, or en
 | `PORT` | No | Server port | `3000` |
 | `TUNNEL` | No | Set to `1` to run with Cloudflare Tunnel | `1` |
 
-Get your API key at [vybenetwork.com/pricing](https://vybe.fyi/api-pricing?utm_source=token-metadata-api-readme&utm_medium=referral).
+Get your API key at [`https://vybe.fyi/api-pricing`](https://vybe.fyi/api-pricing?utm_source=token-metadata-api-readme&utm_medium=referral).
 
 ---
 
