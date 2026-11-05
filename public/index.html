@@ -51,8 +51,57 @@
   <meta name="twitter:image:alt" content="Solana Token Metadata API app powered by Vybe API" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="app.css?v=122" />
-</head>
+    <link rel="stylesheet" href="app.css?v=125" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Solana Token Metadata API",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Web",
+          "url": "https://solana-token-metadata-api.vybenetwork.com/",
+          "description": "Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Vybe Network",
+            "url": "https://vybe.fyi/"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What loads for one mint?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Token details, top holders, 30-day top traders, and recent trades."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a Vybe API key?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generate a free API key on Vybe. A free key starts your first calls. Paid plans raise the rate limit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What do the holder rows show?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each holder's share of supply, sorted by the percentage held."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
 <body>
   <div class="container">
     <header class="page-masthead" aria-label="About and resources">
@@ -277,6 +326,66 @@
         </div>
       </nav>
     </header>
+
+    <section class="seo-answer" aria-labelledby="tokenAnswerTitle">
+      <p class="seo-answer__eyebrow"><span>Vybe</span><span class="seo-answer__pill">Token stats</span></p>
+      <div class="seo-answer__top">
+        <div class="seo-answer__intro">
+          <h2 id="tokenAnswerTitle">Metadata, holders, traders, and trades</h2>
+          <p>Enter a mint and this page loads its name, symbol, market cap, and 24-hour volume, plus top holders and top traders. Price and supply sit on that same token response, along with the logo when present.</p>
+          <p>Trade rows for the mint load with program labels. Holder share and 30-day trader PnL load next to those trades for the same mint you entered. A free API key on Vybe is enough to start. Paid plans raise the rate limit.</p>
+          <a class="page-masthead__btn page-masthead__btn--key" href="https://vybe.fyi/api-pricing?utm_source=token-stats&amp;utm_medium=referral">
+            <span class="page-masthead__btn-icon page-masthead__btn-icon--key" aria-hidden="true"></span>
+            Generate a free API key to get started
+          </a>
+        </div>
+        <aside class="seo-answer__endpoints" aria-label="Endpoints Used">
+          <h3><svg class="seo-answer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12"/><path d="M8 12h12"/><path d="M8 18h12"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></svg>Endpoints Used:</h3>
+          <ul>
+          <li><span>Token Details API</span> <code>GET /v4/tokens/{mintAddress}</code></li>
+          <li><span>Token Trade History API</span> <code>GET /v4/trades</code></li>
+          <li><span>Top Token Holders API</span> <code>GET /v4/tokens/{mintAddress}/top-holders</code></li>
+          <li><span>Labeled Programs API</span> <code>GET /v4/programs/labeled-program-accounts</code></li>
+          <li><span>Top Token Traders API</span> <code>GET /v4/wallets/top-traders</code></li>
+          </ul>
+        </aside>
+      </div>
+      <ul class="seo-answer__cards">
+      <li class="seo-answer__card seo-answer__card--price">
+        <h3><svg class="seo-answer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-5 3.5 3.5L20 7"/><path d="M14 7h6v6"/></svg>Token details</h3>
+        <p>Name, symbol, market cap, and 24-hour volume for the mint.</p>
+      </li>
+      <li class="seo-answer__card seo-answer__card--candles">
+        <h3><svg class="seo-answer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16"/><path d="M7 8h3v6H7z"/><path d="M17 4v16"/><path d="M14 11h3v5h-3z"/></svg>Top holders</h3>
+        <p>Largest holders and the share of supply each one holds.</p>
+      </li>
+      <li class="seo-answer__card seo-answer__card--history">
+        <h3><svg class="seo-answer__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg>Top traders</h3>
+        <p>Wallets ranked by 30-day realized PnL on that mint.</p>
+      </li>
+      <li class="seo-answer__card seo-answer__card--product">
+        <h3><svg class="seo-answer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v5h5"/><path d="M10 13h6"/><path d="M10 17h4"/></svg>Trades</h3>
+        <p>Recent trades for the mint, with program addresses labeled.</p>
+      </li>
+      </ul>
+      <div class="seo-answer__faq">
+        <p class="seo-answer__label">Also answered here</p>
+        <div class="seo-answer__faq-grid">
+        <article>
+          <h3>What loads for one mint?</h3>
+          <p>Token details, top holders, 30-day top traders, and recent trades.</p>
+        </article>
+        <article>
+          <h3>How do I get a Vybe API key?</h3>
+          <p><a href="https://vybe.fyi/api-pricing?utm_source=token-stats&amp;utm_medium=referral">Generate a free API key on Vybe</a>. A free key starts your first calls. Paid plans raise the rate limit.</p>
+        </article>
+        <article>
+          <h3>What do the holder rows show?</h3>
+          <p>Each holder's share of supply, sorted by the percentage held.</p>
+        </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section-card section-card--token token-section panel" id="tokenSection">
       <div class="section-header section-header--token">
