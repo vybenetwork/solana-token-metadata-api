@@ -2,10 +2,27 @@
 
 > Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics.
 
-Live demo of the Vybe Solana API. The linked docs pages are the Markdown versions.
+This is a free demo that showcases the Vybe token endpoints. Open it in the browser to test and demo them. Nothing to install. The linked docs pages are the Markdown versions.
+
+## What this demo shows
+Enter a mint and the page loads its name, symbol, market cap, and 24-hour volume, plus top holders and top traders. Price and supply sit on that same token response, along with the logo when present. Trade rows for the mint load with program labels. Holder share and 30-day trader PnL load next to those trades.
+
+- Token details: name, symbol, market cap, and 24-hour volume for the mint.
+- Top holders: largest holders and the share of supply each one holds.
+- Top traders: wallets ranked by 30-day realized PnL on that mint.
+- Trades: recent trades for the mint, with program addresses labeled.
+
+## Endpoints this demo calls
+- Token Details API: `GET /v4/tokens/{mintAddress}`
+- Token Trade History API: `GET /v4/trades`
+- Top Token Holders API: `GET /v4/tokens/{mintAddress}/top-holders`
+- Labeled Programs API: `GET /v4/programs/labeled-program-accounts`
+- Top Token Traders API: `GET /v4/wallets/top-traders`
+
+The demo page is free to use. Token Details is on the Free plan, the lowest tier. A free API key starts the first calls. Paid plans raise the rate limit.
 
 ## Demo
-- [Solana Token Metadata API](https://solana-token-metadata-api.vybenetwork.com/): Explore SPL and Token-2022 token stats with the Vybe Solana API: metadata, market cap, top holders, top traders, trade history and exportable analytics.
+- [Solana Token Metadata API](https://solana-token-metadata-api.vybenetwork.com/): Free browser demo of the token endpoints. Enter a mint to test metadata, holders, traders, and trades.
 
 ## Docs
 - [Token Details Guide](https://docs.vybenetwork.com/docs/token-details-spl-token-2022.md)
